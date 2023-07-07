@@ -62,7 +62,7 @@
         <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
           <div class="app-brand demo">
             <a href="index.html" class="app-brand-link">
-               <img src="https://vacationcards.com/nuevo/assets/images/logo/logo.png" width="200" />
+               <img src="{{asset('assets/img/elements/logo.png')}}" width="200" />
             </a>
 
             <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">

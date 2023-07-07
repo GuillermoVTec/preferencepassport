@@ -8,7 +8,7 @@
     
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ 'CRM Vacation Cards' }}</title>
+    <title>{{ 'Preference Passport' }}</title>
 
    
 

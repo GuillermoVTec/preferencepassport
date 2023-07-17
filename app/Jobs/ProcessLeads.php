@@ -22,6 +22,8 @@ class ProcessLeads implements ShouldQueue
      * @var \App\Models\Podcast
      */
     protected $lead;
+  
+    
  
     /**
      * Create a new job instance.
@@ -38,6 +40,8 @@ class ProcessLeads implements ShouldQueue
     public function __construct(Lead $lead)
     {
         $this->lead = $lead;
+        
+        //var_dump($lead->tarjeta);die();
     }
 
     /**
@@ -53,10 +57,12 @@ class ProcessLeads implements ShouldQueue
             'titulo' => 'nuevo lead:',
             'Email' => $lead->correo,
             'nombre' => $lead->nombre,
+            'tarjeta' => $lead->tarjeta,
+            'password'=> $lead->password,
             'url' => 'http://crm.vacationcards.com/'
         ];
-        
-             Mail::to($lead->correo)->send(new correo($mailData));
+            
+            Mail::to($lead->correo)->send(new correo($mailData));
         
       
        

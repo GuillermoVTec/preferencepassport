@@ -60,41 +60,40 @@
         <!-- Menu -->
 
         <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
-          <div class="app-brand demo">
-            <a href="index.html" class="app-brand-link">
-               <img src="{{asset('assets/img/elements/logo.png')}}" width="200" />
-            </a>
+  <div class="app-brand demo">
+    <a href="index.html" class="app-brand-link">
+      <img src="assets/img/elements/logo.png" width="200" />
+    </a>
 
-            <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
-              <i class="bx bx-chevron-left bx-sm align-middle"></i>
-            </a>
-          </div>
+    <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
+      <i class="bx bx-chevron-left bx-sm align-middle"></i>
+    </a>
+  </div>
 
-          <div class="menu-inner-shadow"></div>
+  <div class="menu-inner-shadow"></div>
 
-          <ul class="menu-inner py-1">
-            <!-- Dashboard -->
-            <li class="menu-item">
-              <a href="index.html" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-home-circle"></i>
-                <div data-i18n="Analytics">Dashboard</div>
-              </a>
-            </li>
-            <li class="menu-item active">
-              <a href="mis-leads.html" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-detail"></i>
-                <div data-i18n="Analytics">Activados</div>
-              </a>
-            </li>
-            <li class="menu-item">
-              <a href="agregar-lead.html" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-cloud-upload"></i>
-                <div data-i18n="Analytics">Registrar Tarjeta</div>
-              </a>
-            </li>
-
-          </ul>
-        </aside>
+  <ul class="menu-inner py-1">
+    <!-- Dashboard -->
+    <li class="menu-item">
+      <a href="index.html" class="menu-link">
+        <i class="menu-icon tf-icons bx bx-home-circle"></i>
+        <span>Dashboard</span>
+      </a>
+    </li>
+    <li class="menu-item active">
+      <a href="mis-leads.html" class="menu-link">
+        <i class="menu-icon tf-icons bx bx-detail"></i>
+        <span>Activados</span>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="agregar-lead.html" class="menu-link">
+        <i class="menu-icon tf-icons bx bx-cloud-upload"></i>
+        <span>Registrar Tarjeta</span>
+      </a>
+    </li>
+  </ul>
+</aside>
         <!-- / Menu -->
 
         <!-- Layout container -->

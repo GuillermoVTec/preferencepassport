@@ -36,6 +36,7 @@ class Leads_distribuidor extends Model
         'correo' => 'required',
         'tarjeta' => 'requiered',
         'pais' => 'required',
+        'password'=>'password',
         
 
         
@@ -48,7 +49,7 @@ class Leads_distribuidor extends Model
      *
      * @var array
      */
-    protected $fillable = ['requiered','id_lead','nombre','edad','estadocivil','telefono1','telefono2','correo','pais','user_name','id_vendedor_name','created_at2','notal'];
+    protected $fillable = ['password','tarjeta','id_lead','nombre','edad','estadocivil','telefono1','telefono2','correo','pais','user_name','id_vendedor_name','created_at2','notal'];
 
 
 

@@ -21,6 +21,7 @@ class correo extends Mailable
     public function __construct($mailData)
     {
         $this->mailData = $mailData;
+        
     }
 
     /**
@@ -30,6 +31,10 @@ class correo extends Mailable
      */
     public function build()
     {
-        return $this->view('Email.leads')->subject("Notificacion de tarjeta");
+         
+            return $this->view('Email.leads')->subject($this->$mailData->tarjeta);
+        
+        
+        
     }
 }

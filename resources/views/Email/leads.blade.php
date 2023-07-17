@@ -315,11 +315,11 @@ ul.social li{
       <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: auto;">
       	
       	<tr>
-          <td valign="top"  style="padding: 1em 2.5em 0 2.5em; background:#FF7602;">
+          <td valign="top"  style="padding: 1em 2.5em 0 2.5em; background:#fff">
           	<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
           		<tr>
           			<td class="logo" style="text-align: center;">
-			            <h1><a href="#"><img src="http://vacationcards.com/crm/imgemail/VacationsCardLogo2022-bco.png" alt="" style="width: 200px;"></a></h1>
+			            <h1><a href="#"><img src="{{asset('assets/img/elements/logo.png')}}" alt="" style="width: 200px;"></a></h1>
 			          </td>
           		</tr>
           	</table>
@@ -349,6 +349,11 @@ ul.social li{
             			<div class="text">
             				<h2>Congratulations</h2>
             				<h3>{{ $mailData['nombre'] }}</h3>
+            				<h3>Mail: {{ $mailData['Email'] }}</h3>
+            				<h3>Password:{{ $mailData['password'] }}</h3>
+            				<h3>{{ $mailData['tarjeta'] }}</h3>
+            				
+            				
             				<p style="color:#000;">You received a Vacation Cards, you are one step away from being able to enjoy your next vacation. Within 48 hours you will receive a welcome call from your travel concierge to activate your Vacation Cards 😊</p>
             				
             			</div>

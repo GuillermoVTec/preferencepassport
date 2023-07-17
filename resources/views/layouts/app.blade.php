@@ -418,7 +418,7 @@
                 @endrole
             
 
-            @role('Administradorr')
+            @role('Administrador')
             
                 <li class="menu-item ">
                 <a href="" class="menu-link menu-toggle">
@@ -718,7 +718,7 @@
 
               <!-- /Search -->
                                       <!-- Authentication Links -->
-                             <ul class="navbar-nav flex-row align-items-center ms-auto">
+                        <ul class="navbar-nav flex-row align-items-center ms-auto">
                           <li class="nav-item lh-1 me-3">
 
                             <div class="flex-grow-1">
@@ -755,7 +755,7 @@
 
                     
 
-                        <li class="nav-item navbar-dropdown dropdown-user dropdown">
+                         <li class="nav-item navbar-dropdown dropdown-user dropdown">
                                  <a id="nav-link dropdown-toggle hide-arrow" class=" dropdown" href="{{ route('home') }}" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                  <div class="avatar avatar-online">
                                  <img src=" {{Auth::user()->getMedia('avatars')->first()->getUrl('thumb');}}" alt class="w-px-40 h-auto rounded-circle">
@@ -852,20 +852,22 @@
           
 
             <!-- / Footer -->
-            <footer class="content-footer footer ">
-              <div class="container-xxl d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
-                <div class="mb-2 mb-md-0">
-                  ©
-                  <script>
-                    document.write(new Date().getFullYear());
-                  </script>
-                  VACATION CARDS
-                </div>
-                <div>
-                 <a href="#" target="_blank" class="footer-link me-4"> <i class="menu-icon tf-icons bx bx-support"></i> Soporte</a>
-                </div>
-              </div>
-            </footer>
+            <footer class="content-footer footer">
+  <div class="container-xxl d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
+    <div class="mb-2 mb-md-0">
+      &copy;
+      <script>
+        document.write(new Date().getFullYear());
+      </script>
+      Prefence Passport
+    </div>
+    <div>
+      <a href="#" target="_blank" class="footer-link me-4">
+        <i class="menu-icon tf-icons bx bx-support"></i> Soporte
+      </a>
+    </div>
+  </div>
+</footer>
             <div class="content-backdrop fade"></div>
  
           <!-- Content wrapper -->

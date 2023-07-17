@@ -79,11 +79,11 @@
                 <div class="row">
                 <!-- Bootstrap carousel -->
                 <div class="col-md">
-                  <h5 class="my-4 text-primary fs-4">🏆 Calidad y Servicio</h5>
+  <h5 class="my-4 text-primary fs-4">🏆 Calidad y Servicio</h5>
 
-                  <p class="fs-5">En <b>Vacation Cards</b> nos esforzamos por crear una experiencia que supere todas las expectativas del viajero mientras disfrutas de sus vacaciones de ensueño. Gracias a nuestro equipo travel concierge apasionadas y dedicadas al servicio al cliente logramos convertir cada uno de los momentos en algo especial que recordaran de por vida.</p>
-                  <p class="fs-5">Te ayudaran a descubrir las increíbles amenidades incluidas en nuestros hermosos destinos de playa en nuestros hoteles de 5 y 4 estrellas en todo México, el Caribe y América Central. Así podrás elegir donde serán tus próximas vacaciones.</p>
-                </div>
+  <p class="fs-5">En <b>Preference Passport</b>, nos esforzamos por crear una experiencia que supere todas las expectativas del viajero mientras disfruta de unas vacaciones de ensueño. Nuestro equipo de travel concierge está apasionado y dedicado al servicio al cliente, convirtiendo cada momento en algo especial que recordarán de por vida.</p>
+  <p class="fs-5">Te ayudaremos a descubrir las increíbles amenidades incluidas en nuestros hermosos destinos de playa en hoteles de 5 y 4 estrellas en México, el Caribe y América Central. Así podrás elegir dónde serán tus próximas vacaciones.</p>
+</div>
                 <!-- Bootstrap crossfade carousel -->
                 <div class="col-md">
                  

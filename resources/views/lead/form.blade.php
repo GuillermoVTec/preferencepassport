@@ -72,6 +72,7 @@
             <label class="form-label" for="basic-icon-default-company">País</label>
             <div class="input-group input-group-merge">
                 <span class="input-group-text"><i class="bx bx-globe"></i></span>
+                
                 <input id="basic-icon-default-company2" aria-describedby="basic-icon-default-email" type="text" class="form-control @error('pais') is-invalid @enderror" name="pais"  value="{{$lead->pais}}"  autocomplete="pais" autofocus placeholder = 'Pais'>
                 {!! $errors->first('correo', '<div class="invalid-feedback">El campo Correo  es obligatorio.</div>') !!}
             
@@ -89,7 +90,7 @@
         </div>
 
 
-
+<input id="basic-icon-default-company2" aria-describedby="basic-icon-default-email" type="hidden" class="form-control @error('password') is-invalid @enderror" name="password"  value="{{$password}}"  autocomplete="password" autofocus placeholder = 'Password'>
         
   
 
@@ -163,7 +164,7 @@
         <div class="form-group">
             
             {{ Form::text('user', $username2, ['class' => 'form-control' . ($errors->has('user') ? ' is-invalid' : ''),"readonly", "hidden","value" => "username2"]) }}
-
+            
             {!! $errors->first('user', '<div class="invalid-feedback">:message</div>') !!}
         </div>
 

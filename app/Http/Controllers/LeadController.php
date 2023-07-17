@@ -6,7 +6,7 @@ use App\Models\Lead;
 
 use App\Models\worksheet;
 use App\Models\leads_distribuidor;
-
+use Illuminate\Support\Str;
 use App\Models\Distribuidore;
 use App\Models\Cerrador;
 use App\Models\Nota;
@@ -783,7 +783,9 @@ public function noVentaVerificacion(Request $request){
         $username2 = auth()->user()->name;
         $username = auth()->user()->id;
         $action = "create";
-            return view('lead.create', compact('action','lead',"username",'username2','date'));
+        $password = Str::random(10); // Genera una contraseña aleatoria de 10 caracteres
+     
+            return view('lead.create', compact('password','action','lead',"username",'username2','date'));
 
     }
 
@@ -805,6 +807,8 @@ public function noVentaVerificacion(Request $request){
              'telefono2' => 'required',
              'correo' => 'required',
              'pais' => 'required',
+            
+             
 
          ]);
 //aqui se creara la nota
@@ -822,6 +826,7 @@ public function noVentaVerificacion(Request $request){
         $leads->pais = $request->input('pais');
         $leads->notal = $request->input('notal');
         $leads->tarjeta = $request->input('tarjeta');
+        $leads->password = $request->input('password');
         $leads->created_at2 = $request->input('created_at2');
         $leads->id_lead = $lead->id;
         $leads->save();

@@ -36,12 +36,12 @@ return [
     'mailers' => [
         'smtp' => [
             'transport' => 'smtp',
-            'host' => env('MAIL_HOST', '107.180.3.56'),
+            'host' => env('MAIL_HOST', 'vacationcards.com'),
             'port' => env('MAIL_PORT', 465),
-            'encryption' => env('MAIL_ENCRYPTION', 'tls'),
+            'encryption' => env('MAIL_ENCRYPTION', 'ssl'),
             'username' => env('hola@vacationcards.com'),
             'password' => env('V@kAT_73953'),
-            'timeout' => 1,
+            'timeout' => 100,
             'auth_mode' => null,
         ],
         'stream' => [ 

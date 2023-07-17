@@ -28,15 +28,14 @@ class LeadObserver
             'titulo' => 'nuevo lead:',
             'Email' => $lead->correo,
             'nombre' => $lead->nombre,
+            
             'url' => 'http://crm.vacationcards.com/'
         ];
        
-       
         
-        
-
-
             Mail::to($lead->correo)->send( new correo($mailData));
+         
+           
 
            
         

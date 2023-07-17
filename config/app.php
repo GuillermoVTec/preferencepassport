@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'CRM Vacation Cards 1.0'),
+    'name' => env('APP_NAME', 'CRM'),
 
     /*
     |--------------------------------------------------------------------------
@@ -39,7 +39,7 @@ return [
     |
     */
 
-    'debug' => (bool) env('APP_DEBUG', false),
+    'debug' => (bool) env('APP_DEBUG', true),
 
     /*
     |--------------------------------------------------------------------------
@@ -52,7 +52,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://vacationcards.com/crm'),
+    'url' => env('APP_URL', 'http://vacationcards.com/prueba/preferencepassport'),
 
     'asset_url' => env('ASSET_URL', null),
 

@@ -26,6 +26,7 @@ use Illuminate\Support\Facades\Mail;
  * @property $updated_at
  * @property $user_id
  * @property $tarjeta
+ * @property $password
  * @property $statuses_id
  * @property $cerrador_id
  * @property Statuses $statuses
@@ -58,6 +59,7 @@ class Lead extends Model
 		'pais' => 'required',
         'notal' => 'required',
         'tarjeta' => 'requiered',
+        'password' => 'requiered',
 	
 		
 		'statuses_id' => 'required',
@@ -71,7 +73,7 @@ class Lead extends Model
      *
      * @var array
      */
-    protected $fillable = ['tarjeta','nombre','edad','estadocivil','telefono1','telefono2','correo','pais','user_id','statuses_id','cerrador_id','created_at2','notal'];
+    protected $fillable = ['password','tarjeta','nombre','edad','estadocivil','telefono1','telefono2','correo','pais','user_id','statuses_id','cerrador_id','created_at2','notal'];
 
 
 

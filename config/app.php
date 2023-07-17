@@ -52,7 +52,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://vacationcards.com/prueba/preferencepassport'),
+    'url' => env('APP_URL', 'https://preferencepassport.com/preferencepassport'),
 
     'asset_url' => env('ASSET_URL', null),
 

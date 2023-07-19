@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'CRM'),
+    'name' => env('APP_NAME', 'CRM Preference Passport'),
 
     /*
     |--------------------------------------------------------------------------

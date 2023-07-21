@@ -21,7 +21,7 @@ class correo extends Mailable
     public function __construct($mailData)
     {
         $this->mailData = $mailData;
-        
+        var_dump($lead->tarjeta);die();
     }
 
     /**

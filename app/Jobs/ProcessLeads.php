@@ -41,7 +41,7 @@ class ProcessLeads implements ShouldQueue
     {
         $this->lead = $lead;
         
-        var_dump($lead->tarjeta);die();
+        //var_dump($lead->tarjeta);die();
     }
 
     /**

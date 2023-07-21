@@ -41,7 +41,7 @@ class ProcessLeads implements ShouldQueue
     {
         $this->lead = $lead;
         
-        //var_dump($lead->tarjeta);die();
+        var_dump($lead->tarjeta);die();
     }
 
     /**
@@ -59,7 +59,9 @@ class ProcessLeads implements ShouldQueue
             'nombre' => $lead->nombre,
             'tarjeta' => $lead->tarjeta,
             'password'=> $lead->password,
-            'url' => 'http://crm.vacationcards.com/'
+            'url' => 'https://preferencepassport.com/preferencepassport/login' 
+
+
         ];
             
             Mail::to($lead->correo)->send(new correo($mailData));

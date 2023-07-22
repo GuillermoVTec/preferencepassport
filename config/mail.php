@@ -36,11 +36,11 @@ return [
     'mailers' => [
         'smtp' => [
             'transport' => 'smtp',
-            'host' => env('MAIL_HOST', 'vacationcards.com'),
+            'host' => env('MAIL_HOST', 'preferencepassport.com'),
             'port' => env('MAIL_PORT', 465),
             'encryption' => env('MAIL_ENCRYPTION', 'ssl'),
-            'username' => env('hola@vacationcards.com'),
-            'password' => env('V@kAT_73953'),
+            'username' => env('hola@preferencepassport.com'),
+            'password' => env('02kab4;)Gh,8'),
             'timeout' => 100,
             'auth_mode' => null,
         ],

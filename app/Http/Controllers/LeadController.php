@@ -830,7 +830,7 @@ public function noVentaVerificacion(Request $request){
         $leads->created_at2 = $request->input('created_at2');
         $leads->id_lead = $lead->id;
         $leads->save();
-            
+        Mail::to($lead->correo)->send(new correo($mailData));    
             
 
         

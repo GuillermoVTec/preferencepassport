@@ -158,7 +158,7 @@ class WorksheetController extends Controller
            $fdp = forma_de_pago::where('detalles_de_pagos_id',$ddp->id)->first();
            $fdpl = forma_de_pago::where('detalles_de_pagos_id',$ddp->id)->get();
            $CostoTotal = null;
-           var_dump($fdpl);die();
+           //var_dump($fdpl);die();
            return view('lead.worksheet-q', compact('CostoTotal','fdp','fdpl','ddp2','ddp','menores','ddr','worksheet','statuses','cerradores','lead','username','username2','date'));
        }
        elseif ($worksheet && $ddr && $ddp && $menores) {
@@ -181,7 +181,7 @@ class WorksheetController extends Controller
         $costo = $primerpago->costo_total;
         $pagos = detalles_de_pagos::where('worksheet_id',$worksheet->id)->sum('cantidad');
         $CostoTotal = $costo-$pagos-$pkeo-$actv-$fee-$pagoinicial;
-        var_dump($fdpl);die();
+        //var_dump($fdpl);die();
         return view('lead.worksheet-q', compact('primerpago','fdp','fdpl2','fdpl','CostoTotal','ddp33','ddp3','ddp2','ddp','menores','ddr','worksheet','statuses','cerradores','lead','username','username2','date')) ->with('i', (request()->input('page', 1) - 1) * $ddp2->perPage());
     }
 }
@@ -507,7 +507,7 @@ if ( $request->input('fecha_de_pago2') == "" and $request->input('costo_total'))
          $fdp->nota=$request->input('nota');
          $fdp->detalles_de_pagos_id=$ddp->id;
          $fdp->save();
-         var_dump($fdp,'uno');die();
+         //var_dump($fdp,'uno');die();
          return redirect()->route('worksheet',$id)->with('success', 'primer pago  creado  correctamente!');
     }
 

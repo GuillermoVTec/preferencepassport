@@ -113,7 +113,7 @@ class DetallesDePagoController extends Controller
          //$ddp->addMediaFromRequest('comprovante')->toMediaCollection('comprovantes');
          $ddp->update();
 
-        var_dump($request->input('fecha_de_pago2'));
+        //var_dump($request->input('fecha_de_pago2'));
 
         return redirect()->route('indexddp')
             ->with('success', 'DetallesDePago updated successfully');

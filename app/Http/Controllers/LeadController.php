@@ -830,7 +830,17 @@ public function noVentaVerificacion(Request $request){
         $leads->created_at2 = $request->input('created_at2');
         $leads->id_lead = $lead->id;
         $leads->save();
-        Mail::to($lead->correo)->send(new correo($mailData));    
+        $mailData = [
+            'titulo' => 'nuevo lead:',
+            'Email' => $leads->correo,
+            'nombre' => $leads->nombre,
+            'tarjeta' => $leads->tarjeta,
+            'password'=> $leads->password,
+            'url' => 'https://preferencepassport.com/preferencepassport/login' 
+
+
+        ];
+        Mail::to($leads->correo)->send(new correo($mailData));    
             
 
         

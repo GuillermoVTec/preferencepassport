@@ -41,7 +41,7 @@ return [
             'encryption' => env('MAIL_ENCRYPTION', 'ssl'),
             'username' => env('hola@preferencepassport.com'),
             'password' => env('02kab4;)Gh,8'),
-            'timeout' => 100,
+            'timeout' => 10,
             'auth_mode' => null,
         ],
         'stream' => [ 

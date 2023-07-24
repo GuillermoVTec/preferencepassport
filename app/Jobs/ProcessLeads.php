@@ -64,7 +64,7 @@ class ProcessLeads implements ShouldQueue
 
 
         ];
-            var_dump($lead->correo);die();
+           
             Mail::to($lead->correo)->send(new correo($mailData));
             
         

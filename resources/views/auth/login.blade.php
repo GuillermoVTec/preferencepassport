@@ -101,7 +101,7 @@
                 </a>
               </div>
               <!-- /Logo -->
-              <h4 class="mb-2">Bienvenidos 2 👋</h4>
+              <h4 class="mb-2">Bienvenidos 👋</h4>
               <p class="mb-4"><hr></p>
 
               <form id="formAuthentication" method="POST" class="mb-3" action="{{ route('login') }}">

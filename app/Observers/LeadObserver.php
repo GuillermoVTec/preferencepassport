@@ -33,7 +33,7 @@ class LeadObserver
         ];
        
         
-            Mail::to($lead->correo)->send( new correo($mailData));
+           // Mail::to($lead->correo)->send( new correo($mailData));
          
            
 

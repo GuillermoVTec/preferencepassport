@@ -53,6 +53,7 @@ class ProcessLeads implements ShouldQueue
     {
    
         $lead = $this->lead;
+        var_dump($lead->correo);die();
         $mailData = [
             'titulo' => 'nuevo lead:',
             'Email' => $lead->correo,

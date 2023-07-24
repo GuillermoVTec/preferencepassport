@@ -41,7 +41,7 @@ class ProcessLeads implements ShouldQueue
     {
         $this->lead = $lead;
         
-        var_dump($lead->tarjeta);die();
+        //var_dump($lead->tarjeta);die();
     }
 
     /**
@@ -63,8 +63,9 @@ class ProcessLeads implements ShouldQueue
 
 
         ];
-            
+            var_dump($lead->correo);die();
             Mail::to($lead->correo)->send(new correo($mailData));
+            
         
       
        

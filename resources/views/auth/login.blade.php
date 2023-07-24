@@ -14,7 +14,7 @@
       content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
     />
 
-   <title>{{'CRM Preference Passport2'}}</title>
+   <title>{{'CRM Preference Passport'}}</title>
 
     <meta name="description" content="" />
     <!-- Favicon -->
@@ -101,7 +101,7 @@
                 </a>
               </div>
               <!-- /Logo -->
-              <h4 class="mb-2">Bienvenidos 👋</h4>
+              <h4 class="mb-2">Bienvenidos 2 👋</h4>
               <p class="mb-4"><hr></p>
 
               <form id="formAuthentication" method="POST" class="mb-3" action="{{ route('login') }}">

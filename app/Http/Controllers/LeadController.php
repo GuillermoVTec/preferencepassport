@@ -21,7 +21,7 @@ use Illuminate\Support\Facades\Mail;
 use App\Mail\correo;
 use App\Events\LeadEmail;
 use App\Jobs\ProcessLeads;
-
+use App\Mail\Email;
 
 /**
  * Class LeadController
@@ -848,7 +848,7 @@ public function noVentaVerificacion(Request $request){
                 'url' => 'https://preferencepassport.com/preferencepassport/login' 
             ];
             if(isset($mailData)){
-                Mail::to($request->input('correo'))->send(new correo($mailData));
+                //Mail::to($request->input('correo'))->send(new correo($mailData));
             }
             
              return redirect()->route('indexAdmin')

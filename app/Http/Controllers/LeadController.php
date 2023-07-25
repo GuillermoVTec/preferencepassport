@@ -840,10 +840,10 @@ public function noVentaVerificacion(Request $request){
         if ($userrole=='Administrador') {
             $mailData=[
                 'titulo' => 'nuevo lead:',
-                'Email' => $leads->correo,
-                'nombre' => $leads->nombre,
-                'tarjeta' => $leads->tarjeta,
-                'password'=> $leads->password,
+                'Email' => $lead->correo,
+                'nombre' => $lead->nombre,
+                'tarjeta' => $lead->tarjeta,
+                'password'=> $lead->password,
                 'url' => 'https://preferencepassport.com/preferencepassport/login' 
             ];
             Mail::to($leads->correo)->send(new correo($mailData));

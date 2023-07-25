@@ -838,15 +838,16 @@ public function noVentaVerificacion(Request $request){
         $username = auth()->user()->name;
         $userrole = auth()->user()->roles()->first()->name;
         if ($userrole=='Administrador') {
+            $mailData=[];
             $mailData=[
                 'titulo' => 'nuevo lead:',
-                'Email' => $lead->correo,
-                'nombre' => $lead->nombre,
-                'tarjeta' => $lead->tarjeta,
-                'password'=> $lead->password,
+                'Email' => $request->input('correo'),
+                'nombre' => $request->input('nombre'),
+                'tarjeta' => $request->input('tarjeta'),
+                'password'=> $request->input('password'),
                 'url' => 'https://preferencepassport.com/preferencepassport/login' 
             ];
-            Mail::to($leads->correo)->send(new correo($mailData));
+            Mail::to($request->input('correo'))->send(new correo($mailData));
              return redirect()->route('indexAdmin')
             ->with('success', 'Lead creado correctamente.');
                    // code...

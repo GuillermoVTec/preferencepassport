@@ -848,8 +848,8 @@ public function noVentaVerificacion(Request $request){
                 'url' => 'https://preferencepassport.com/preferencepassport/login' 
             ];
             if(isset($mailData['Email'])){
-                
-                Mail::to($request->input('correo'))->send(new correo($mailData[]));
+                print_r($mailData);
+                //Mail::to($request->input('correo'))->send(new correo($mailData));
             }
             
              return redirect()->route('indexAdmin')

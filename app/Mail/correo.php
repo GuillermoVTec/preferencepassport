@@ -29,9 +29,9 @@ class correo extends Mailable
      *
      * @return $this
      */
-    public function build()
+    public function build($mailData)
     {
-            
+        $this->mailData = $mailData;
             return $this->view('Email.leads')->subject($this->$mailData->tarjeta);
         
         

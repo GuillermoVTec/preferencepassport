@@ -848,9 +848,9 @@ public function noVentaVerificacion(Request $request){
                 'url' => 'https://preferencepassport.com/preferencepassport/login' 
             ];
             
-                print_r($mailData);
+                //print_r($mailData);
               
-                //Mail::to($request->input('correo'))->send(new correo($mailData));
+                Mail::to($request->input('correo'))->send(new correo($mailData));
              
             
              return redirect()->route('indexAdmin')

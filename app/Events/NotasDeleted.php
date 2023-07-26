@@ -22,7 +22,7 @@ class NotasDeleted
      */
     public function __construct(Nota $nota)
     {
-        this->nota=$nota;
+        $this->nota=$nota;
     }
 
     /**

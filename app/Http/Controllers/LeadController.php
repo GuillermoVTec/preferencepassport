@@ -814,7 +814,7 @@ public function noVentaVerificacion(Request $request){
 //aqui se creara la nota
         $lead = Lead::create($request->all()); 
         $lead->save();
-        ProcessLeads::dispatchAfterResponse($lead);
+        //ProcessLeads::dispatchAfterResponse($lead);
         $leads = new Leads_distribuidor();
         $leads->user_name = $request->input('username2');
         $leads->nombre = $request->input('nombre');

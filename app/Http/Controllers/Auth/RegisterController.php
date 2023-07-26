@@ -134,6 +134,7 @@ class RegisterController extends Controller
         
         $dist->save();
         Mail::to($user->email=$data['email'])->send(new Email($mailData));
+        
         return $user;
     }else{
                 $mailData = [

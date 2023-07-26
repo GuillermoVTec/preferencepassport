@@ -839,18 +839,7 @@ public function noVentaVerificacion(Request $request){
         $userrole = auth()->user()->roles()->first()->name;
         if ($userrole=='Administrador') {
            
-            $mailData=[
-                'titulo' => 'nuevo lead:',
-                'Email' => $request->input('correo'),
-                'nombre' => $request->input('nombre'),
-                'tarjeta' => $request->input('tarjeta'),
-                'password'=> $request->input('password'),
-                'url' => 'https://preferencepassport.com/preferencepassport/login' 
-            ];
-            
-                //print_r($mailData);
-              
-                Mail::to($request->input('correo'))->send(new correo($mailData));
+
              
             
              return redirect()->route('indexAdmin')

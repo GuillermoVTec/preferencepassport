@@ -1,0 +1,30 @@
+prueba
+ <!--
+                                                @if($lead->statuses->id == '1')
+                                            <td ><span class="badge bg-label-primary me-1">{{ $lead->statuses->nombre}} </span> </font></td>
+                                                @elseif($lead->statuses->id == '2')
+                                            <td><span class="badge bg-label-success me-1">{{ $lead->statuses->nombre}} </span>  </font></td>
+                                                @elseif($lead->statuses->id == '3')
+                                            <td> <span class="badge bg-label-info me-1">{{ $lead->statuses->nombre}} </span> </font></td>
+                                                @elseif($lead->statuses->id == '4')
+                                            <td><span class="badge bg-label-warning me-1">{{ $lead->statuses->nombre}} </span> </font></td>
+                                                @else($lead->statuses->id == '5')
+                                            <td> <span class="badge bg-label-danger me-1">{{ $lead->statuses->nombre}} </span>  </td>
+                                                 @endif
+             
+											-->
+$collection = collect([
+    ['name' => 'Desk'],
+    ['name' => null],
+    ['name' => 'Bookcase'],
+]);
+ 
+$filtered = $collection->whereNull('name');
+ 
+$filtered->all();
+ 
+/*
+    [
+        ['name' => null],
+    ]
+*/

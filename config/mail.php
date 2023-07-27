@@ -36,7 +36,7 @@ return [
     'mailers' => [
         'smtp' => [
             'transport' => 'smtp',
-            'host' => env('MAIL_HOST', '107.180.41.51'),
+            'host' => env('MAIL_HOST', 'preferencepassport.com'),
             'port' => env('MAIL_PORT', 465),
             'encryption' => env('MAIL_ENCRYPTION', 'ssl'),
             'username' => env('hola@preferencepassport.com'),
@@ -99,7 +99,7 @@ return [
 
     'from' => [
         'address' => env('MAIL_FROM_ADDRESS', 'hola@preferencepassport.com'),
-        'name' => env('MAIL_FROM_NAME', 'Example'),
+        'name' => env('MAIL_FROM_NAME', 'Preference Passport'),
     ],
 
     /*

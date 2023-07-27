@@ -1,0 +1,53 @@
+[2023-07-21 12:22:21] local.INFO: {"id":357,"nombre":"guillermo venancio tec ucan","edad":30,"estadocivil":"casado","telefono1":"99999999999","telefono2":"99999999999","correo":"memonuevecero@gmail.com","pais":"mexico","notal":"cancun","created_at":"2023-07-20T22:45:11.000000Z","updated_at":"2023-07-20T22:45:11.000000Z","created_at2":"2023-07-20","user_id":8,"statuses_id":1,"cerrador_id":null,"id_vendedor":null,"tarjeta":"Tarjeta Classic","password":"qmrlodFZ76"}Lead Elimidado  por : Gina Cravioto  
+[2023-07-21 12:22:24] local.INFO: {"id":356,"nombre":"guillermo venancio tec ucan","edad":29,"estadocivil":"casado","telefono1":"1234567890","telefono2":"1234567890","correo":"guillermo.v.tec.ucan@gmail.com","pais":"mexico","notal":"notal","created_at":"2023-07-18T21:06:00.000000Z","updated_at":"2023-07-18T21:06:00.000000Z","created_at2":"2023-07-18","user_id":8,"statuses_id":1,"cerrador_id":null,"id_vendedor":null,"tarjeta":"Tarjeta Classic","password":"5YylDmPfrH"}Lead Elimidado  por : Gina Cravioto  
+[2023-07-21 12:22:37] local.INFO: {"nombre":"guillermo venancio tec ucan","edad":"30","estadocivil":"casado","telefono1":"99999999999","telefono2":"99999999999","correo":"memonuevecero@gmail.com","pais":"mexico","notal":"cancun","password":"K9T9ujSITC","user_id":"8","created_at2":"2023-07-21 12:22:27","statuses_id":"1","tarjeta":"Tarjeta Classic","updated_at":"2023-07-21T17:22:37.000000Z","created_at":"2023-07-21T17:22:37.000000Z","id":358}Lead Creado  por : Gina Cravioto  
+[2023-07-21 12:51:19] local.INFO: {"nombre":"guillermo venancio tec ucan","edad":"30","estadocivil":"casado","telefono1":"99999999999","telefono2":"99999999999","correo":"memonuevecero@gmail.com","pais":"mexico","notal":"cancun","password":"A0otzSjmwd","user_id":"8","created_at2":"2023-07-21 12:51:08","statuses_id":"1","tarjeta":"Tarjeta Classic","updated_at":"2023-07-21T17:51:19.000000Z","created_at":"2023-07-21T17:51:19.000000Z","id":359}Lead Creado  por : Gina Cravioto  
+[2023-07-21 12:51:20] local.ERROR: Undefined variable $lead {"userId":8,"exception":"[object] (ErrorException(code: 0): Undefined variable $lead at C:\\xampp\\htdocs\\preferencepassport\\app\\Mail\\correo.php:24)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\preferencepassport\\app\\Mail\\correo.php(24): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'Undefined varia...', 'C:\\\\xampp\\\\htdocs...', 24)
+#1 C:\\xampp\\htdocs\\preferencepassport\\app\\Jobs\\ProcessLeads.php(67): App\\Mail\\correo->__construct(Array)
+#2 C:\\xampp\\htdocs\\preferencepassport\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): App\\Jobs\\ProcessLeads->handle()
+#3 C:\\xampp\\htdocs\\preferencepassport\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#4 C:\\xampp\\htdocs\\preferencepassport\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#5 C:\\xampp\\htdocs\\preferencepassport\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#6 C:\\xampp\\htdocs\\preferencepassport\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(653): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#7 C:\\xampp\\htdocs\\preferencepassport\\vendor\\laravel\\framework\\src\\Illuminate\\Bus\\Dispatcher.php(128): Illuminate\\Container\\Container->call(Array)
+#8 C:\\xampp\\htdocs\\preferencepassport\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(128): Illuminate\\Bus\\Dispatcher->Illuminate\\Bus\\{closure}(Object(App\\Jobs\\ProcessLeads))
+#9 C:\\xampp\\htdocs\\preferencepassport\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(App\\Jobs\\ProcessLeads))
+#10 C:\\xampp\\htdocs\\preferencepassport\\vendor\\laravel\\framework\\src\\Illuminate\\Bus\\Dispatcher.php(132): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#11 C:\\xampp\\htdocs\\preferencepassport\\vendor\\laravel\\framework\\src\\Illuminate\\Bus\\Dispatcher.php(266): Illuminate\\Bus\\Dispatcher->dispatchNow(Object(App\\Jobs\\ProcessLeads), false)
+#12 C:\\xampp\\htdocs\\preferencepassport\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Bus\\Dispatcher->Illuminate\\Bus\\{closure}()
+#13 C:\\xampp\\htdocs\\preferencepassport\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#14 C:\\xampp\\htdocs\\preferencepassport\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(81): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#15 C:\\xampp\\htdocs\\preferencepassport\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Object(Closure), Object(Closure))
+#16 C:\\xampp\\htdocs\\preferencepassport\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(653): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Object(Closure), Array, NULL)
+#17 C:\\xampp\\htdocs\\preferencepassport\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1158): Illuminate\\Container\\Container->call(Object(Closure))
+#18 C:\\xampp\\htdocs\\preferencepassport\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(182): Illuminate\\Foundation\\Application->terminate()
+#19 C:\\xampp\\htdocs\\preferencepassport\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->terminate(Object(Illuminate\\Http\\Request), Object(Illuminate\\Http\\RedirectResponse))
+#20 {main}
+"} 
+[2023-07-21 12:52:04] local.INFO: {"nombre":"guillermo venancio tec ucan","edad":"30","estadocivil":"casado","telefono1":"99999999999","telefono2":"99999999999","correo":"memonuevecero@gmail.com","pais":"mexico","notal":"cancun","password":"vmXq7R4gM9","user_id":"8","created_at2":"2023-07-21 12:51:52","statuses_id":"1","tarjeta":"Tarjeta Classic","updated_at":"2023-07-21T17:52:04.000000Z","created_at":"2023-07-21T17:52:04.000000Z","id":360}Lead Creado  por : Gina Cravioto  
+[2023-07-21 12:52:04] local.ERROR: Undefined variable $lead {"userId":8,"exception":"[object] (ErrorException(code: 0): Undefined variable $lead at C:\\xampp\\htdocs\\preferencepassport\\app\\Mail\\correo.php:24)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\preferencepassport\\app\\Mail\\correo.php(24): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'Undefined varia...', 'C:\\\\xampp\\\\htdocs...', 24)
+#1 C:\\xampp\\htdocs\\preferencepassport\\app\\Jobs\\ProcessLeads.php(67): App\\Mail\\correo->__construct(Array)
+#2 C:\\xampp\\htdocs\\preferencepassport\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): App\\Jobs\\ProcessLeads->handle()
+#3 C:\\xampp\\htdocs\\preferencepassport\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#4 C:\\xampp\\htdocs\\preferencepassport\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#5 C:\\xampp\\htdocs\\preferencepassport\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#6 C:\\xampp\\htdocs\\preferencepassport\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(653): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#7 C:\\xampp\\htdocs\\preferencepassport\\vendor\\laravel\\framework\\src\\Illuminate\\Bus\\Dispatcher.php(128): Illuminate\\Container\\Container->call(Array)
+#8 C:\\xampp\\htdocs\\preferencepassport\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(128): Illuminate\\Bus\\Dispatcher->Illuminate\\Bus\\{closure}(Object(App\\Jobs\\ProcessLeads))
+#9 C:\\xampp\\htdocs\\preferencepassport\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(App\\Jobs\\ProcessLeads))
+#10 C:\\xampp\\htdocs\\preferencepassport\\vendor\\laravel\\framework\\src\\Illuminate\\Bus\\Dispatcher.php(132): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#11 C:\\xampp\\htdocs\\preferencepassport\\vendor\\laravel\\framework\\src\\Illuminate\\Bus\\Dispatcher.php(266): Illuminate\\Bus\\Dispatcher->dispatchNow(Object(App\\Jobs\\ProcessLeads), false)
+#12 C:\\xampp\\htdocs\\preferencepassport\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Bus\\Dispatcher->Illuminate\\Bus\\{closure}()
+#13 C:\\xampp\\htdocs\\preferencepassport\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#14 C:\\xampp\\htdocs\\preferencepassport\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(81): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#15 C:\\xampp\\htdocs\\preferencepassport\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Object(Closure), Object(Closure))
+#16 C:\\xampp\\htdocs\\preferencepassport\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(653): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Object(Closure), Array, NULL)
+#17 C:\\xampp\\htdocs\\preferencepassport\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1158): Illuminate\\Container\\Container->call(Object(Closure))
+#18 C:\\xampp\\htdocs\\preferencepassport\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(182): Illuminate\\Foundation\\Application->terminate()
+#19 C:\\xampp\\htdocs\\preferencepassport\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->terminate(Object(Illuminate\\Http\\Request), Object(Illuminate\\Http\\RedirectResponse))
+#20 {main}
+"} 

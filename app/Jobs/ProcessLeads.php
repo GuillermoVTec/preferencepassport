@@ -63,7 +63,7 @@ class ProcessLeads implements ShouldQueue
             'url' => 'https://preferencepassport.com/preferencepassport/login' 
         ];
             //var_dump($mailData);die();
-            Mail::to($lead->correo)->send(new correo('o'));
+            Mail::to($lead->correo)->send(new correo($mailData));
             
         
       

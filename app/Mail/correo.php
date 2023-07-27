@@ -32,7 +32,7 @@ class correo extends Mailable
     public function build()
     {
         
-            return $this->view('Email.leads')->subject($this->$mailData->tarjeta);
+            return $this->view('Email.leads')->subject($this->mailData->tarjeta);
         
         
         

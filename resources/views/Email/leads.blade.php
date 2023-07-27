@@ -348,10 +348,7 @@ ul.social li{
             		<td style="padding: 0 2.5em; text-align: center;">
             			<div class="text">
             				<h2>Congratulations</h2>
-            				<h3>{{ $mailData['nombre'] }}</h3>
-            				<h3>Mail: {{ $mailData['Email'] }}</h3>
-            				<h3>Password:{{ $mailData['password'] }}</h3>
-            				<h3>{{ $mailData['tarjeta'] }}</h3>
+            	
             				
             				
             				<p style="color:#000;">You received a Vacation Cards, you are one step away from being able to enjoy your next vacation. Within 48 hours you will receive a welcome call from your travel concierge to activate your Vacation Cards 😊</p>

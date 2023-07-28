@@ -81,6 +81,7 @@
 										<th>✉️Correo</th>
 										<th>🌐País</th>
                                         <th>💳Tarjeta</th>
+                                        <th>🌐Idioma</th>
                                         <th>🌐Fecha</th>
                                         <th>Estado</th>
                                        
@@ -121,6 +122,7 @@
 											<td>{{ $lead->correo }}</td>
 											<td>{{ $lead->pais }}</td>
                                             <td>{{ $lead->tarjeta }}</td>
+                                            <td>{{ $lead->idioma }}</td>
                                             <td>{{ $lead->created_at->format('d-m-Y') }}</td>
                                             
 

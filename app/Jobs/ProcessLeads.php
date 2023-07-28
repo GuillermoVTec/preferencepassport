@@ -60,6 +60,7 @@ class ProcessLeads implements ShouldQueue
             'nombre' => $lead->nombre,
             'tarjeta' => $lead->tarjeta,
             'password'=> $lead->password,
+            'idioma'=> $lead->idioma,
             'url' => 'https://preferencepassport.com/preferencepassport/login' 
         ];
             //var_dump($mailData);die();

@@ -1,8 +1,8 @@
 
-  
-
-
-   
+           <select  name='idioma' class="form-select" >
+               <option value="es" >es</option>
+               <option value="us" >us</option>
+           </select>
      
           <div class="form-group">
             

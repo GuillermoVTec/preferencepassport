@@ -827,6 +827,7 @@ public function noVentaVerificacion(Request $request){
         $leads->notal = $request->input('notal');
         $leads->tarjeta = $request->input('tarjeta');
         $leads->password = $request->input('password');
+        $leads->idioma = $request->input('idioma');
         $leads->created_at2 = $request->input('created_at2');
         $leads->id_lead = $lead->id;
         $leads->save();

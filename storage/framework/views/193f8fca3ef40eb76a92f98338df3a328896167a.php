@@ -81,6 +81,7 @@
 										<th>✉️Correo</th>
 										<th>🌐País</th>
                                         <th>💳Tarjeta</th>
+                                        <th>🌐Idioma</th>
                                         <th>🌐Fecha</th>
                                         <th>Estado</th>
                                        
@@ -121,6 +122,7 @@
 											<td><?php echo e($lead->correo); ?></td>
 											<td><?php echo e($lead->pais); ?></td>
                                             <td><?php echo e($lead->tarjeta); ?></td>
+                                            <td><?php echo e($lead->idioma); ?></td>
                                             <td><?php echo e($lead->created_at->format('d-m-Y')); ?></td>
                                             
 

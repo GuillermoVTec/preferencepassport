@@ -378,8 +378,7 @@ ul.social li{
     </div>
   </center>
 </body>
-@endif
-@if($mailData['idioma']  === 'es')
+@elseif($mailData['idioma']  === 'es')
 <body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #f1f1f1;">
 	<center style="width: 100%; background-color: #f1f1f1;">
     <div style="display: none; font-size: 1px;max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all; font-family: sans-serif;">
@@ -429,7 +428,7 @@ ul.social li{
             				<h3>{{ $mailData['tarjeta'] }}</h3>
             				
             				
-            				<p style="color:#000;">You received a Vacation Cards, you are one step away from being able to enjoy your next vacation. Within 48 hours you will receive a welcome call from your travel concierge to activate your Vacation Cards 😊</p>
+            				<p style="color:#000;">Recibiste una Tarjeta Vacacional, estás a un paso de poder disfrutar de tus próximas vacaciones. Dentro de las 48 horas, recibirá una llamada de bienvenida de su consejero de viajes para activar sus tarjetas de vacaciones. 😊</p>
             				
             			</div>
             		</td>

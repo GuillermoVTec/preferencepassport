@@ -307,81 +307,66 @@ ul.social li{
 
 @if($mailData['idioma'] === 'us')
 <body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #f1f1f1;">
-	<center style="width: 100%; background-color: #f1f1f1;">
-    <div style="display: none; font-size: 1px;max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all; font-family: sans-serif;">
-     
-    </div>
-    <div style="max-width: 600px; margin: 0 auto;" class="email-container">
-    	<!-- BEGIN BODY -->
-      <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: auto;">
-      	
-      	<tr>
-          <td valign="top"  style="padding: 1em 2.5em 0 2.5em; background:#fff">
-          	<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
-          		<tr>
-          			<td class="logo" style="text-align: center;">
-			            <h1><a href="#"><img src="{{asset('assets/img/elements/logo.png')}}" alt="" style="width: 200px;"></a></h1>
-			          </td>
-          		</tr>
-          	</table>
-          </td>
-	      </tr><!-- end tr -->
-	      <tr>
-	      	<td class="bg_white">
-	      		<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
-		      		<tr>
-		            <td valign="top" width="100%" style="padding-bottom: 20px;">
-		              <div class="project-entry">
-		              	<img src="http://vacationcards.com/crm/imgemail/vacationscard.jpg" alt="" style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;">
-		              	
-		              </div>
-		            </td>
-		          </tr>
-		          
-		          
-						</table>
-	      	</td>
-	      </tr><!-- end tr -->
-				<tr>
-          <td valign="middle" class="hero bg_white" style="padding: 2em 0 2em 0;">
-            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
-            	<tr>
-            		<td style="padding: 0 2.5em; text-align: center;">
-            			<div class="text">
-            				<h2>Congratulations us</h2>
-            				<h3>{{ $mailData['nombre'] }}</h3>
-            				<h3>Mail: {{ $mailData['Email'] }}</h3>
-            				<h3>Password:{{ $mailData['password'] }}</h3>
-            				<h3>{{ $mailData['tarjeta'] }}</h3>
-            				
-            				
-            				<p style="color:#000;">You received a Vacation Cards, you are one step away from being able to enjoy your next vacation. Within 48 hours you will receive a welcome call from your travel concierge to activate your Vacation Cards 😊</p>
-            				
-            			</div>
-            		</td>
-            	</tr>
+    <center style="width: 100%; background-color: #f1f1f1;">
+        <div style="display: none; font-size: 1px;max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all; font-family: sans-serif;"></div>
+        <div style="max-width: 600px; margin: 0 auto; font-family: sans-serif;">
+            <!-- BEGIN BODY -->
+            <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: auto;">
+                <tr>
+                    <td valign="top"  style="padding: 1em 2.5em 0 2.5em; background:#fff">
+                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tr>
+                                <td class="logo" style="text-align: center;">
+                                    <h1><a href="#"><img src="{{asset('assets/img/elements/logo.png')}}" alt="" style="width: 200px;"></a></h1>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr><!-- end tr -->
+                <tr>
+                    <td class="bg_white">
+                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tr>
+                                <td valign="top" width="100%" style="padding-bottom: 20px;">
+                                    <div class="project-entry">
+                                        <img src="http://vacationcards.com/crm/imgemail/vacationscard.jpg" alt="" style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;">
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr><!-- end tr -->
+                <tr>
+                    <td valign="middle" class="hero bg_white" style="padding: 2em 0 2em 0;">
+                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tr>
+                                <td style="padding: 0 2.5em; text-align: center;">
+                                    <div class="text">
+                                        <h2>Congratulations es</h2>
+                                        <h3>{{ $mailData['nombre'] }}</h3>
+                                        <h3>Mail: {{ $mailData['Email'] }}</h3>
+                                        <h3>Password: {{ $mailData['password'] }}</h3>
+                                        <h3>{{ $mailData['tarjeta'] }}</h3>
+                                        <p style="color:#000;">You received a Vacation Cards, you are one step away from being able to enjoy your next vacation. Within 48 hours you will receive a welcome call from your travel concierge to activate your Vacation Cards . 😊</p>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr><!-- end tr -->
+                <!-- 1 Column Text + Button : END -->
             </table>
-          </td>
-	      </tr><!-- end tr -->
-	      
-      <!-- 1 Column Text + Button : END -->
-      </table>
-      <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: auto;">
-      	
-        <tr>
-          <td class="bg_light" style="text-align: center; color: #000;">
-          	<p>📍Av. Bonampak #77 77500 Cancún, México <br> 🇲🇽 +52 998 609 0009 | ✉️ hola@vacationcards.com</p>
-          </td>
-        </tr>
-      </table>
-
-    </div>
-  </center>
+            <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: auto;">
+                <tr>
+                    <td class="bg_light" style="text-align: center; color: #000; padding: 1em 0;">
+                        <p>📍Av. Bonampak #77 77500 Cancún, México <br> 🇲🇽 +52 998 609 0009 | ✉️ hola@preferencepassport.com</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </center>
 </body>
 @elseif($mailData['idioma']  === 'es')
-Claro, puedo ayudarte a mejorar el formato del correo electrónico. A continuación, realizaré algunos ajustes para organizar mejor el contenido y hacer que el correo sea más atractivo visualmente:
-
-```blade.php
 <body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #f1f1f1;">
     <center style="width: 100%; background-color: #f1f1f1;">
         <div style="display: none; font-size: 1px;max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all; font-family: sans-serif;"></div>

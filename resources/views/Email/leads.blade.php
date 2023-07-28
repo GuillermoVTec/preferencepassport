@@ -305,7 +305,7 @@ ul.social li{
 
 </head>
 
-@if($mailData['idioma'] = 'us')
+@if($mailData['idioma'] === 'us')
 <body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #f1f1f1;">
 	<center style="width: 100%; background-color: #f1f1f1;">
     <div style="display: none; font-size: 1px;max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all; font-family: sans-serif;">
@@ -379,7 +379,7 @@ ul.social li{
   </center>
 </body>
 @endif
-@if($mailData['idioma']  = 'es')
+@if($mailData['idioma']  === 'es')
 <body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #f1f1f1;">
 	<center style="width: 100%; background-color: #f1f1f1;">
     <div style="display: none; font-size: 1px;max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all; font-family: sans-serif;">

@@ -15,7 +15,7 @@
                 <div class="card card-default">
                 
                     <div class="card-header">
-                      <h5 class=""><small class="text-muted float-end"><a class="btn btn-primary" href="<?php echo e(route('home')); ?>">Regresar</a></small></h5>
+                      <h5 class=""><small class="text-muted float-end"><a class="btn btn-info"  href="<?php echo e(route('home')); ?>">Regresar</a></small></h5>
                     </div>
 
                     <div class="card-body">
@@ -24,7 +24,7 @@
 
                             <?php echo $__env->make('lead.form', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
                             <div class="fw-bold py-3 mb-4">
-                                <button type="submit" class="btn btn-primary">Guardar</button>
+                                <button type="submit" class="btn btn-info">Guardar</button>
                                 <a type="reset" href="<?php echo e(route('home')); ?>" class="btn btn-outline-secondary">Cancelar </a>
                              </div>
                         </form>

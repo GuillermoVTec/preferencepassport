@@ -27,25 +27,25 @@
                       <div class="col-sm-7">
                         <div class="card-body">
                             <?php if(\Spatie\Permission\PermissionServiceProvider::bladeMethodWrapper('hasRole', 'Verificacion')): ?>
-                            <h5 class="card-title text-primary">Bienvenido (a) <?php echo e(Auth::user()->name); ?>! 🎉</h5>
+                            <h5 class="card-title "style="color: #0376aa">Bienvenido (a) <?php echo e(Auth::user()->name); ?>! 🎉</h5>
                             <?php endif; ?>
                             <?php if(\Spatie\Permission\PermissionServiceProvider::bladeMethodWrapper('hasRole', 'Gerente')): ?>
-                            <h5 class="card-title text-primary">Bienvenido (a) <?php echo e(Auth::user()->name); ?>! 🎉</h5>
+                            <h5 class="card-title "style="color: #0376aa">Bienvenido (a) <?php echo e(Auth::user()->name); ?>! 🎉</h5>
                             <?php endif; ?>
                                                          <?php if(\Spatie\Permission\PermissionServiceProvider::bladeMethodWrapper('hasRole', 'Gerente Ventas')): ?>
-                            <h5 class="card-title text-primary">Bienvenido (a) <?php echo e(Auth::user()->name); ?>! 🎉</h5>
+                            <h5 class="card-title "style="color: #0376aa">Bienvenido (a) <?php echo e(Auth::user()->name); ?>! 🎉</h5>
                             <?php endif; ?>
                                                          <?php if(\Spatie\Permission\PermissionServiceProvider::bladeMethodWrapper('hasRole', 'Reservaciones')): ?>
-                            <h5 class="card-title text-primary">Bienvenido (a) <?php echo e(Auth::user()->name); ?>! 🎉</h5>
+                            <h5 class="card-title "style="color: #0376aa">Bienvenido (a) <?php echo e(Auth::user()->name); ?>! 🎉</h5>
                             <?php endif; ?>
                              <?php if(\Spatie\Permission\PermissionServiceProvider::bladeMethodWrapper('hasRole', 'Administrador')): ?>
-                            <h5 class="card-title text-primary">Bienvenido (a) <?php echo e(Auth::user()->name); ?>! 🎉</h5>
+                            <h5 class="card-title "style="color: #0376aa">Bienvenido (a) <?php echo e(Auth::user()->name); ?>! 🎉</h5>
                             <?php endif; ?>
                             <?php if(\Spatie\Permission\PermissionServiceProvider::bladeMethodWrapper('hasRole', 'Ventas')): ?>
-                           <h5 class="card-title text-primary">Bienvenido (a) <?php echo e(Auth::user()->name); ?>! 🎉</h5>
+                           <h5 class="card-title "style="color: #0376aa">Bienvenido (a) <?php echo e(Auth::user()->name); ?>! 🎉</h5>
                            <?php endif; ?>
                            <?php if(\Spatie\Permission\PermissionServiceProvider::bladeMethodWrapper('hasRole', 'Distribuidor')): ?>
-                           <h5 class="card-title text-primary"> Bienvenido (a)  <?php echo e(Auth::user()->distribuidore->representantelegal); ?> ! 🎉</h5>
+                           <h5 class="card-title " style="color: #0376aa"> Bienvenido (a)  <?php echo e(Auth::user()->distribuidore->representantelegal); ?> ! 🎉</h5>
                             <?php endif; ?>
                           <p class="mb-4">
                             Vacation Cards la tarjeta de vacaciones #1 en el mundo.
@@ -79,7 +79,7 @@
                 <div class="row">
                 <!-- Bootstrap carousel -->
                 <div class="col-md">
-  <h5 class="my-4 text-primary fs-4">🏆 Calidad y Servicio</h5>
+  <h5 class="my-4  fs-4" style="color: #0376aa">🏆 Calidad y Servicio</h5>
 
   <p class="fs-5">En <b>Preference Passport</b>, nos esforzamos por crear una experiencia que supere todas las expectativas del viajero mientras disfruta de unas vacaciones de ensueño. Nuestro equipo de travel concierge está apasionado y dedicado al servicio al cliente, convirtiendo cada momento en algo especial que recordarán de por vida.</p>
   <p class="fs-5">Te ayudaremos a descubrir las increíbles amenidades incluidas en nuestros hermosos destinos de playa en hoteles de 5 y 4 estrellas en México, el Caribe y América Central. Así podrás elegir dónde serán tus próximas vacaciones.</p>
@@ -131,7 +131,7 @@
                 <div class="col-md-6 col-lg-4">
                   <div class="card text-center mb-3">
                     <div class="card-body">
-                      <h5 class="card-title"><i class='bx bxs-gift text-primary' style="font-size: 54px;"></i></h5>
+                      <h5 class="card-title"><i class='bx bxs-gift ' style="color: #0376aa ;font-size: 54px;"></i></h5>
                       <p class="card-text fs-5">Regalar incentivos vacacionales es un increíble beneficio.</p>
                      
                     </div>
@@ -140,7 +140,7 @@
                 <div class="col-md-6 col-lg-4">
                   <div class="card text-center mb-3">
                     <div class="card-body">
-                      <h5 class="card-title"><i class='bx bx-sort-up text-primary' style="font-size: 54px;"></i></h5>
+                      <h5 class="card-title"><i class='bx bx-sort-up '  style="color: #0376aa ;font-size: 54px;"></i></h5>
                       <p class="card-text fs-5">Para incrementar de forma exponencial las ventas de tu negocio</p>
                      
                     </div>
@@ -149,7 +149,7 @@
                 <div class="col-md-6 col-lg-4">
                   <div class="card text-center mb-3">
                     <div class="card-body">
-                      <h5 class="card-title"><i class='bx bx-badge-check text-primary' style="font-size: 54px;"></i></h5>
+                      <h5 class="card-title"><i class='bx bx-badge-check '  style="color: #0376aa ;font-size: 54px;"></i></h5>
                       <p class="card-text fs-5">Mantener la satisfacción de <br>tus consumidores</p>
                       
                     </div>
